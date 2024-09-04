@@ -1,0 +1,60 @@
+/* Style pour le conteneur principal de gestion des utilisateurs */
+.user-management-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f0f2f5; /* Couleur de fond douce */
+  min-height: 100vh;
+}
+
+/* Style pour le titre principal */
+.user-management-container h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Style pour le conteneur du menu */
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px; /* Espacement entre les boutons */
+  margin-bottom: 30px;
+}
+
+/* Style pour les boutons du menu */
+.menu button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Style pour le bouton au survol */
+.menu button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Style pour le bouton en focus */
+.menu button:focus {
+  outline: none;
+}
+
+/* Style pour le conteneur du contenu */
+.content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

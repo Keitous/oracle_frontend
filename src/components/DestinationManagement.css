@@ -1,0 +1,57 @@
+/* Styles de gestion des destinations */
+.destination-management-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Styles pour le menu de gestion des destinations */
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+/* Styles pour les boutons du menu */
+.menu button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px; /* Ajoute un léger arrondi aux boutons */
+    transition: background-color 0.3s ease; /* Transition pour un effet doux au survol */
+}
+
+.menu button:hover {
+    background-color: #0056b3;
+}
+
+/* Lien de déconnexion */
+.menu a {
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    background-color: #dc3545;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: #c82333;
+}
+
+/* Style du contenu */
+.content {
+    margin-top: 20px;
+}
+
+/* Ajoutez des styles supplémentaires si nécessaire pour le contenu affiché */

@@ -1,0 +1,47 @@
+.add-vehicule-container {
+    max-width: 600px; /* Largeur maximale du conteneur */
+    margin: 0 auto; /* Centrage horizontal */
+    padding: 20px; /* Espacement interne */
+    background: #fff; /* Fond blanc pour le conteneur */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Ombre pour le conteneur */
+  }
+  
+  h2 {
+    text-align: center; /* Titre centré */
+    color: #333; /* Couleur du texte du titre */
+  }
+  
+  .add-vehicule-form {
+    display: flex; /* Utilisation de Flexbox pour le formulaire */
+    flex-direction: column; /* Les éléments sont en colonne */
+  }
+  
+  .form-group {
+    margin-bottom: 15px; /* Espacement entre les groupes de champs */
+  }
+  
+  label {
+    font-weight: bold; /* Gras pour les étiquettes */
+  }
+  
+  input {
+    padding: 10px; /* Espacement interne pour les champs de texte */
+    border: 1px solid #ccc; /* Bordure grise pour les champs */
+    border-radius: 5px; /* Coins arrondis pour les champs */
+    font-size: 1rem; /* Taille de police */
+  }
+  
+  .submit-button {
+    background-color: #007BFF; /* Couleur de fond du bouton */
+    color: white; /* Couleur du texte du bouton */
+    border: none; /* Pas de bordure */
+    border-radius: 5px; /* Coins arrondis pour le bouton */
+    padding: 10px 15px; /* Espacement interne du bouton */
+    cursor: pointer; /* Curseur pointer sur le bouton */
+    transition: background-color 0.3s ease; /* Effet de transition */
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3; /* Couleur de fond au survol */
+  }
