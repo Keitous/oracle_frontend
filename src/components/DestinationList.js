@@ -54,7 +54,7 @@ const DestinationList = () => {
         </tbody>
       </table>
       {/* Lien pour ajouter un nouvel destination */}
-      <Link to="/add-destination" className="add-destination-link">Ajouter un destination</Link>
+      <Link to="/add-destination" className="add-destination-link">Ajouter une destination</Link>
     </div>
   );
 };
