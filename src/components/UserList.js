@@ -13,7 +13,7 @@ const UserList = () => {
   // Effet pour récupérer la liste des utilisateurs lors du chargement du composant
   useEffect(() => {
     // Requête GET pour obtenir la liste des utilisateurs depuis l'API
-    axios.get('http://localhost:3001/api/users')
+    axios.get('https://464d0803b6372f8f4d0542b8bc0a7111.serveo.net/api/users')
       .then(response => {
         // Mise à jour de l'état avec les données des utilisateurs récupérées
         setUsers(response.data);
