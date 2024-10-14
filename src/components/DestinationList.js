@@ -13,7 +13,7 @@ const DestinationList = () => {
   // Effet pour récupérer la liste des destinations lors du chargement du composant
   useEffect(() => {
     // Requête GET pour obtenir la liste des destinations depuis l'API
-    axios.get('http://localhost:3001/api/destinations')
+    axios.get('https://464d0803b6372f8f4d0542b8bc0a7111.serveo.net/api/destinations')
       .then(response => {
         // Mise à jour de l'état avec les données des destinations récupérées
         setDestinations(response.data);
