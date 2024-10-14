@@ -18,7 +18,7 @@ const Login = () => {
         const checkFirstLogin = async () => {
             try {
                 if (login) {
-                    const response = await axios.get(`https://464d0803b6372f8f4d0542b8bc0a7111.serveo.net/api/check-first-login/${login}`);
+                    const response = await axios.get(`http://localhost:3001/api/check-first-login/${login}`);
                     setIsFirstLogin(response.data.isFirstLogin); // Mise à jour du statut de première connexion
                 }
             } catch (error) {
@@ -46,7 +46,7 @@ const Login = () => {
             }
 
             try {
-                const response = await axios.post('https://464d0803b6372f8f4d0542b8bc0a7111.serveo.net/api/login', {
+                const response = await axios.post('http://localhost:3001/api/login', {
                     login,
                     defaultPassword,
                     newPassword
@@ -54,7 +54,7 @@ const Login = () => {
 
                 if (response.data.success) {
                     // Mise à jour du mot de passe après la première connexion
-                    const updateResponse = await axios.post('https://464d0803b6372f8f4d0542b8bc0a7111.serveo.net/api/update-password', {
+                    const updateResponse = await axios.post('http://localhost:3001/api/update-password', {
                         login,
                         newPassword
                     });
@@ -80,7 +80,7 @@ const Login = () => {
             }
 
             try {
-                const response = await axios.post('https://464d0803b6372f8f4d0542b8bc0a7111.serveo.net/api/login', {
+                const response = await axios.post('http://localhost:3001/api/login', {
                     login,
                     password: newPassword
                 });
@@ -101,7 +101,7 @@ const Login = () => {
     // Fonction pour récupérer les détails de l'utilisateur après connexion
     const fetchUserDetails = async () => {
         try {
-            const response = await axios.get(`https://464d0803b6372f8f4d0542b8bc0a7111.serveo.net/api/users/${login}`);
+            const response = await axios.get(`http://localhost:3001/api/users/${login}`);
             const userRole = response.data.role;
             console.log('Rôle utilisateur récupéré:', userRole); // Vérification du rôle récupéré
             redirectUserBasedOnRole(userRole); // Redirige l'utilisateur selon son rôle
