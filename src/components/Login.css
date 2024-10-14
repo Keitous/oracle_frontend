@@ -1,0 +1,84 @@
+/* src/components/Login.css */
+.login-container {
+  max-width: 420px; /* Largeur maximale du conteneur légèrement augmentée */
+  margin: 0 auto; /* Centrage horizontal */
+  padding: 30px; /* Espacement interne augmenté pour plus de confort */
+  background: #ffffff; /* Fond blanc pour le conteneur */
+  border-radius: 12px; /* Coins arrondis plus marqués */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Ombre pour le conteneur */
+  position: relative; /* Pour les éléments positionnés en absolu */
+}
+
+.login-container::before {
+  content: ''; /* Création d'un pseudo-élément pour l'image de fond */
+  position: absolute; /* Position absolue pour superposer l'image de fond */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://source.unsplash.com/1600x900/?travel'); /* Image de fond attrayante */
+  background-size: cover; /* Couvre toute la surface */
+  background-position: center; /* Centrage de l'image */
+  border-radius: 12px; /* Coins arrondis pour l'image de fond */
+  opacity: 0.2; /* Opacité pour rendre le texte plus lisible */
+  z-index: -1; /* Derrière le contenu du conteneur */
+}
+
+h2 {
+  text-align: center; /* Titre centré */
+  color: #333; /* Couleur du texte du titre */
+  margin-bottom: 20px; /* Espacement sous le titre */
+  font-size: 1.8rem; /* Taille du titre légèrement augmentée */
+  font-weight: 700; /* Poids de police renforcé */
+}
+
+.login-form {
+  display: flex; /* Utilisation de Flexbox pour le formulaire */
+  flex-direction: column; /* Les éléments sont en colonne */
+  gap: 20px; /* Espacement entre les éléments du formulaire */
+}
+
+.form-group {
+  display: flex; /* Utilisation de Flexbox pour les groupes de champs */
+  flex-direction: column; /* Les éléments sont en colonne */
+}
+
+label {
+  font-weight: 600; /* Gras pour les étiquettes */
+  color: #555; /* Couleur plus douce pour les étiquettes */
+}
+
+input {
+  padding: 12px; /* Espacement interne augmenté pour plus de confort */
+  border: 1px solid #ddd; /* Bordure gris clair pour les champs */
+  border-radius: 8px; /* Coins arrondis pour les champs */
+  font-size: 1rem; /* Taille de police standard */
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre interne pour plus de profondeur */
+}
+
+button {
+  background-color: #28a745; /* Couleur de fond du bouton plus vive */
+  color: #ffffff; /* Couleur du texte du bouton */
+  border: none; /* Pas de bordure */
+  border-radius: 8px; /* Coins arrondis pour le bouton */
+  padding: 12px 20px; /* Espacement interne du bouton augmenté */
+  cursor: pointer; /* Curseur pointer sur le bouton */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Effets de transition */
+}
+
+button:hover {
+  background-color: #218838; /* Couleur de fond au survol */
+  transform: scale(1.05); /* Légère augmentation de la taille au survol */
+}
+
+.error-message {
+  color: #dc3545; /* Couleur du message d'erreur plus vive */
+  font-weight: 600; /* Gras pour le message d'erreur */
+  margin-bottom: 20px; /* Espacement sous le message d'erreur */
+  text-align: center; /* Centrage du texte */
+}
+
+
+.button-container {
+  margin-top: 20px; /* Espacement au-dessus du bouton */
+}

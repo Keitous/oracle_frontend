@@ -1,0 +1,57 @@
+/* src/App.css */
+/* Importer la police de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+@keyframes textAnimation {
+  0% {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Styles globaux pour l'application */
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+.App-header {
+  background-color: #282c34; /* Couleur de fond */
+  background: linear-gradient(45deg, #6ab1d7, #1e2a38); /* Dégradé de couleur */
+  padding: 20px; /* Espacement interne */
+  text-align: center; /* Alignement du texte */
+  color: #61dafb; /* Couleur du texte */
+  border-bottom: 4px solid #61dafb; /* Bordure en bas */
+  border-radius: 8px; /* Coins arrondis */
+  transition: background-color 0.3s, border-color 0.3s; /* Transition */
+}
+
+.App-header:hover {
+  background-color: #1e2a38;
+  border-color: #ffffff;
+}
+
+.App-header:hover h1 {
+  color: #ffffff; /* Couleur du texte au survol */
+}
+
+
+.App-header h1 {
+  font-family: 'Roboto', sans-serif; /* Police moderne */
+  font-size: 2.5rem; /* Taille de la police */
+  margin: 0; /* Marge */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Ombre du texte */
+  animation: textAnimation 1s ease-out; /* Animation du texte */
+  transition: color 0.3s; /* Transition */
+}
+
+
+.App-header h1:hover {
+  color: #e8f5e9; /* Couleur du texte au survol */
+  transition: color 0.3s ease; /* Effet de transition pour la couleur du texte */
+
+}

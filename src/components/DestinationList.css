@@ -1,0 +1,58 @@
+.destination-list-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif; /* Police moderne */
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px; /* Taille de police plus grande pour le titre */
+    color: #333; /* Couleur sombre pour une meilleure lisibilité */
+  }
+  
+  .destination-list-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px; /* Taille de police légèrement réduite pour une meilleure lisibilité */
+    text-align: left;
+  }
+  
+  .destination-list-table th, .destination-list-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .destination-list-table th {
+    background-color: #007bff; /* Couleur d'arrière-plan du titre plus attrayante */
+    color: #fff; /* Texte blanc pour le contraste */
+    font-weight: bold; /* Texte en gras pour les en-têtes */
+  }
+  
+  .destination-list-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .destination-list-table tr:hover {
+    background-color: #e2e6ea; /* Couleur de survol plus douce */
+  }
+  
+  .add-destination-link {
+    display: inline-block; /* Changer en inline-block pour permettre le padding */
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 20px; /* Ajouter du padding pour le bouton */
+    font-size: 18px;
+    color: #fff; /* Couleur du texte blanc pour le bouton */
+    background-color: #007bff; /* Couleur d'arrière-plan du bouton */
+    border-radius: 5px; /* Coins arrondis pour le bouton */
+    text-decoration: none;
+  }
+  
+  .add-destination-link:hover {
+    background-color: #0056b3; /* Couleur d'arrière-plan du bouton au survol */
+    text-decoration: none; /* Retirer la décoration du texte au survol */
+  }
+  

@@ -1,0 +1,22 @@
+/* src/components/BackButton.css */
+.back-button {
+    background-color: #4CAF50; /* Couleur de fond */
+    color: #fff; /* Couleur du texte */
+    border: none; /* Supprimer la bordure */
+    padding: 10px 20px; /* Espacement interne */
+    font-size: 1rem; /* Taille du texte */
+    cursor: pointer; /* Curseur en forme de main */
+    border-radius: 5px; /* Coins arrondis */
+    transition: background-color 0.3s ease; /* Effet de transition */
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .back-button:hover {
+    background-color: #388E3C; /* Couleur de fond au survol */
+  }
+  
+  .back-button:focus {
+    outline: none; /* Supprimer le contour au focus */
+  }
+  

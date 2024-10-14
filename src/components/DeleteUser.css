@@ -1,0 +1,27 @@
+/* src/components/DeleteUser.css */
+
+.delete-user {
+  padding: 20px;
+}
+
+.delete-user .form-group {
+  margin-bottom: 15px;
+}
+
+.delete-user input[type="text"] {
+  width: 100%;
+  padding: 8px;
+}
+
+.delete-user button {
+  padding: 10px 15px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-user button:hover {
+  background-color: #c0392b;
+}
