@@ -25,7 +25,7 @@ const EditDestination = () => {
         const fetchDestination = async () => {
             try {
                 // Requête GET pour obtenir les détails de la destination depuis l'API
-                const response = await axios.get(`http://localhost:3001/api/destinations/${code_destination}`);
+                const response = await axios.get(`https://getv.serveo.net/api/destinations/${code_destination}`);
                 console.log('Données récupérées:', response.data); // Vérifie la structure des données récupérées
                 // Mise à jour de l'état avec les données de la destination
                 setDestination(response.data);
@@ -50,7 +50,7 @@ const EditDestination = () => {
         try {
             console.log('Données envoyées pour la mise à jour:', destination); // Vérifie les données envoyées pour la mise à jour
             // Requête PUT pour mettre à jour les détails de la destination dans l'API
-            await axios.put(`http://localhost:3001/api/destinations/${code_destination}`, destination);
+            await axios.put(`https://getv.serveo.net/api/destinations/${code_destination}`, destination);
             // Redirection vers la liste des destinations après la mise à jour
             navigate('/destinations');
         } catch (error) {
