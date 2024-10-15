@@ -13,7 +13,7 @@ const VehiculeList = () => {
   // Effet pour récupérer la liste des Vehicules lors du chargement du composant
   useEffect(() => {
     // Requête GET pour obtenir la liste des Vehicules depuis l'API
-    axios.get('https://464d0803b6372f8f4d0542b8bc0a7111.serveo.net/api/vehicules')
+    axios.get('https://getv.serveo.net/api/vehicules')
       .then(response => {
         // Mise à jour de l'état avec les données des Vehicules récupérées
         setVehicules(response.data);
