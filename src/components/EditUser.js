@@ -37,7 +37,7 @@ const EditUser = () => {
         const fetchUser = async () => {
             try {
                 // Récupération des détails de l'utilisateur à partir de l'API
-                const response = await axios.get(`http://localhost:3001/api/users/${nom_acces}`);
+                const response = await axios.get(`https://getv.serveo.net/api/users/${nom_acces}`);
                 setUser(response.data);
             } catch (error) {
                 console.error('Erreur lors de la récupération des détails de l\'utilisateur:', error);
@@ -47,10 +47,10 @@ const EditUser = () => {
         const fetchOptions = async () => {
             try {
                 // Requêtes pour récupérer les options de liste depuis l'API
-                const typeGestionResponse = await axios.get('http://localhost:3001/api/type-gestion');
-                const fonctionRoleResponse = await axios.get('http://localhost:3001/api/fonction-role');
-                const fonctionResponse = await axios.get('http://localhost:3001/api/fonction');
-                const menuResponse = await axios.get('http://localhost:3001/api/menu');
+                const typeGestionResponse = await axios.get('https://getv.serveo.net/api/type-gestion');
+                const fonctionRoleResponse = await axios.get('https://getv.serveo.net/api/fonction-role');
+                const fonctionResponse = await axios.get('https://getv.serveo.net/api/fonction');
+                const menuResponse = await axios.get('https://getv.serveo.net/api/menu');
 
                 // Transformation des données reçues pour s'assurer qu'elles sont au format attendu
                 setTypeGestionOptions(typeGestionResponse.data.map(item => ({
@@ -91,7 +91,7 @@ const EditUser = () => {
     const handleUpdateUser = async (e) => {
         e.preventDefault();
         try {
-            await axios.put(`http://localhost:3001/api/users/${nom_acces}`, user);
+            await axios.put(`https://getv.serveo.net/api/users/${nom_acces}`, user);
             setMessage('Utilisateur modifié avec succès');
             setTimeout(() => {
                 navigate('/users'); // Redirection vers la liste des utilisateurs après succès
