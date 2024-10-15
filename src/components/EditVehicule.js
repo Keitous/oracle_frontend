@@ -25,7 +25,7 @@ const EditVehicule = () => {
         const fetchVehicule = async () => {
             try {
                 // Requête GET pour obtenir les détails du véhicule depuis l'API
-                const response = await axios.get(`http://localhost:3001/api/vehicules/${code_vehicule}`);
+                const response = await axios.get(`https://getv.serveo.net/api/vehicules/${code_vehicule}`);
                 console.log('Données récupérées:', response.data); // Vérifie la structure des données récupérées
                 // Mise à jour de l'état avec les données du véhicule
                 setVehicule(response.data);
@@ -50,7 +50,7 @@ const EditVehicule = () => {
         try {
             console.log('Données envoyées pour la mise à jour:', vehicule); // Vérifie les données envoyées pour la mise à jour
             // Requête PUT pour mettre à jour les détails du véhicule dans l'API
-            await axios.put(`http://localhost:3001/api/vehicules/${code_vehicule}`, vehicule);
+            await axios.put(`https://getv.serveo.net/api/vehicules/${code_vehicule}`, vehicule);
             // Redirection vers la liste des véhicules après la mise à jour
             navigate('/vehicules');
         } catch (error) {
